@@ -8,6 +8,7 @@ The page uses a generated font called ProText. When a normal font is used to dis
 
 Apart from the default page, the app also supports taking a parameter to show obfuscated version of any text, like so:
 ```http://protext.herokuapp.com?text=Hello+World```
+
 Needless to say, this is what I used in my solution.
 
 ### Solution

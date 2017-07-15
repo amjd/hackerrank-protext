@@ -1,13 +1,14 @@
 ## Unobfuscation Challenge by HackerRank
 HackerRank recently posted a challenge on Hackathon Hackers Facebook group. There's a web page which shows you a sample text and its obfuscated version. You need to figure out a way to get the plain text from the obfuscated text.
 
-Link to the challenge: http://protext.herokuapp.com/
+[Link to the challenge](http://protext.hackerrank.com/)
 
 ### Obfuscation app explained
 The page uses a generated font called ProText. When a normal font is used to display obfuscated text, it is shown as is, but when ProText font is used, it shows the equivalent plaintext. The obfuscated text is just a bunch of random unicode characters shown using HTML entity codes. Looks simple enough, right? Did I mention the generated font changes every 5 seconds? :P
 
 Apart from the default page, the app also supports taking a parameter to show obfuscated version of any text, like so:
-```http://protext.herokuapp.com?text=Hello+World```
+
+`http://protext.herokuapp.com?text=Hello+World`
 
 Needless to say, this is what I used in my solution.
 
@@ -23,10 +24,8 @@ Since the obfuscated code changes every 5 seconds, it's important that both the 
 In my testing, the above workaround led to near perfect results and I was able to get the obfuscated text about 90% of the time.
 
 The script is written in Python 3, using standard packages. To execute, type:
-```
-python3 protext.py
-```
+
+`python3 protext.py`
 
 ### Contribute
 If you have a better approach, feel free to send a pull request.
-
